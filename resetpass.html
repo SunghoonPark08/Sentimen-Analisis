@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Reset Password</title> 
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+	<link rel="stylesheet" href="style2.css">
+</head>
+<body>
+	<div class="container h-100">
+		<div class="d-flex justify-content-center h-100">
+			<div class="user_card">
+				<div class="d-flex justify-content-center">
+					<div class="brand_logo_container">
+						<img src="logo.png" class="brand_logo" alt="Logo"  width = "110px" height="130px">
+					</div>
+				</div>
+				<div class="d-flex justify-content-center">
+					<p>Reset Password</p>
+				</div>
+				<div class="d-flex justify-content-center form_container">
+					<form action = "http://localhost:5000/login" method = "post">
+						<div class="input-group mb-2">
+							<div class="input-group-append">
+								<span class="input-group-text"><i class="fas fa-user"></i></span>
+							</div>
+							<input type="email" name="email" class="form-control input_email" value="" placeholder="Email">
+						</div>
+						<div class="input-group mb-2">
+							<div class="input-group-append">
+								<span class="input-group-text"><i class="fas fa-key"></i></span>
+							</div>
+							<input type="old password" name="" class="form-control input_pass" value="" placeholder="Old password">
+						</div>
+						<div class="input-group mb-2">
+							<div class="input-group-append">
+								<span class="input-group-text"><i class="fas fa-key"></i></span>
+							</div>
+							<input type="new password" name="" class="form-control input_pass" value="" placeholder="New password">
+						</div>
+					</form>
+				</div>
+				<div class="d-flex justify-content-center mt-3 login_container">
+					<button type="button" name="button" class="btn login_btn">Reset</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
